@@ -1,0 +1,84 @@
+/*обнуление*/
+*, *::before, *::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100%;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	background-color: teal;
+}
+input{
+	outline: none;
+}
+/*---------------------------------*/
+h1 {
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin: 10px 0px 20px 0px;
+	color: #fff
+}
+.wrapper{
+	display: flex;
+	margin: 20px auto;
+	max-width: 600px;
+	flex-flow: column nowrap;
+	text-align: center;
+}
+
+.person-flag-container{
+	display: flex;
+	flex-flow: row wrap;
+	margin: 15px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.person-flag-item{
+	display: flex;
+	flex: 0 1 50%;
+	position: relative;
+
+}
+
+.person-flag-item input{
+	margin: 15px;
+	min-height: 100px;
+	width: 100%;
+	padding: 0px 15px;
+	border-radius: 5px;
+	font-size: 25px;
+	text-align: center;
+}
+.person-flag-item img{
+	margin: 15px;
+	width: 100%;
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 20px;
+}
+.img-light{
+	border: 1px solid rgb(2, 244, 236);
+	box-shadow: 0 0 15px rgb(2, 244, 236);
+
+}
+.error-message{
+	display: inline-block;
+	margin: 10px 15px;
+	color: #fff;
+	border: 1px solid red;
+	box-shadow: 0 0 15px red;
+	visibility: visible;
+}
+.error{
+	border: 1px solid red;
+	box-shadow: 0 0 15px red;
+}
+@media (max-width: 599.98px){
+	.person-flag-item{
+		flex: 0 1 100%;
+	}
+}
